@@ -1,0 +1,131 @@
+.register-container {
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+.register-header {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.register-header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.first {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.register-form {
+  
+  background-color: #f0f4ff; /* Light blue form background */
+  padding: 50px 20px 100px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #333;
+  width: 50%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-button1 {
+  font: bolder;
+  font-size: 20px;
+  margin-top: 360px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+   background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  
+}
+
+.submit-button1 i {
+  margin-left: 5px;
+}
+
+.submit-button1:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .register-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .submit-group {
+    margin-right: 0;
+    text-align: center;
+    align-self: center;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 60%;
+  }
+  .first {
+    width: 100%;
+  }
+  .submit-button1 {
+    
+   
+    margin  : 0px auto;
+  }
+}

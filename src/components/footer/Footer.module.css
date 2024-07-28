@@ -1,0 +1,185 @@
+.container {
+  color: white;
+  background-color: #191516;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footerTop {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  top: -90px;
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.formLabel {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  width: 90%;
+  /* max-width: 800px; */
+}
+
+.lab {
+  color: black;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  font: bold;
+}
+
+.lab img {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.formInput {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  width: 80%;
+}
+
+.newsletterInput {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  padding: 20px 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  
+}
+
+.signUpButton {
+  position: absolute;
+  right: 13px;
+  top: 2px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footerContent {
+  margin-top: 50px;
+   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.footerSection {
+  width: 23%;
+  margin-bottom: 20px;
+  line-height: 24px;
+  /* text-align: center; */
+}
+
+.footerSection h3 {
+  color: #eb638b;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footerSection h5,
+.footerSection h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footerSection p,
+.footerSection ul {
+  margin: 0;
+  padding: 0;
+  color: #a0a0a0;
+  list-style: none;
+}
+
+.footerSection ul li {
+  margin-bottom: 10px;
+}
+
+.footerSection ul li a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.footerSection ul li a:hover {
+  text-decoration: underline;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socialLinks li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footerSection {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerSection {
+    width: 100%;
+  }
+  .footerSection h4{
+    text-align: center;
+  }
+  .footerContent{
+    justify-content: center;
+  }
+  .footerTop {
+    margin-top: 10px;
+    top: -132px;
+  }
+  .formLabel {
+    padding: 15px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletterInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .signUpButton {
+    top: 3px;
+  }
+
+  .lab {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+  .footerSection ul li{
+    
+    text-align: center;
+  }
+}

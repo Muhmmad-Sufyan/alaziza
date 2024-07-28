@@ -1,0 +1,73 @@
+.blog-container {
+    font-family: Arial, sans-serif;
+    background-color: #191516;
+    text-align: center;
+    /* color: white; */
+  
+  
+  }
+
+  
+.blog-card{
+    width: 70%;
+   padding: 20px;
+    background-color: #EAECF234;
+    text-align: start;
+    border: 1px solid #EAECF0;
+    border-radius: 17px;
+}
+
+
+.blo-t{
+    padding: 4px;
+    width:35%;
+    text-align: center;
+    background-color: #191516;
+    color: white;
+
+}
+.blo-b{
+    color: #EB638B;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.blog-cards{
+    display: flex;
+    /* justify-content: center; */
+    /* gap: 30px; */
+    padding: 30px 0px 30px 0px;
+}
+.blob-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.blob-1 img{
+    width: 80%;
+}
+@media screen and (max-width :480px) {
+    .blog-cards{
+        flex-direction: column  ;
+        align-items: center;
+    }
+    .blog-card{
+        width: 80%;
+    }
+    .blog-why p{
+        width: 80%;
+        text-align: justify;
+    }
+    .blog-why h1{
+    padding-top: 50px;
+    }
+    .blog-1{
+     flex-direction: column;
+    }
+    .blog-3{
+        width: 90%;
+    }
+}

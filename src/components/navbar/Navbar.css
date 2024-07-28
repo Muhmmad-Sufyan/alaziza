@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* background: #e3f2fd; Light blue background */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.login button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #444;
+}
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f5;
+    padding: 10px 20px;
+    z-index: 50;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-button {
+    display: block;
+    /* padding-right: 100px; */
+    margin-top: 10px;
+  }
+
+  .login {
+    margin-top: 10px;
+    display: none;
+  }
+}
+li {
+  position: relative;
+}
+
+.sublist {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+}
+
+li:hover .sublist {
+  display: flex;
+  flex-direction: column;
+}
+
+.sublist li {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.sublist li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: small;
+  font: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sublist li a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+  border-radius: 4px;
+}

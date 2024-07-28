@@ -1,0 +1,186 @@
+.container23 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header23 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header23 button {
+  border-radius: 36px;
+}
+
+.subbtn {
+  background-color: #eaeaea;
+  border-radius: 36px;
+  display: flex;
+  width: 20%;
+  padding: 5px;
+}
+
+.btn1,
+.btn2 {
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.btn1 {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn2 {
+  background-color: #eaeaea;
+  color: black;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 40px;
+  /* align-items: center; */
+}
+
+.info p {
+  margin: 7px 0;
+  width: 60%;
+}
+
+.auto-call {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.auto-call:hover {
+  background-color: #ff4c3b;
+}
+
+.emergency-note {
+  color: #ff6f61;
+  font-size: 12px;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.contact-list1 {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.contact-list1 ul {
+  /* list-style-type: none; */
+  padding: 0;
+}
+
+.contact-list1 li {
+    margin: 10px 0;
+}
+
+.note {
+    
+    font-size: 12px;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sub253{
+    display: flex;
+    /* align-items: center; */
+    /* gap: 10px; */
+    justify-content: space-between;
+    border-bottom: 1px solid #444444;
+}
+
+.main-coordinator {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.refresh {
+    
+    align-self: flex-start;
+    justify-content: end;
+  /* padding: 10px 20px; */
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-right:-1px;
+}
+
+.refresh:hover {
+  background-color: #444444;
+}
+
+
+@media (max-width: 768px) {
+    .container23 {
+      width: 95%;
+    }
+  
+    .header23 {
+      flex-direction: column;
+    }
+  
+    .subbtn {
+      width: 100%;
+    }
+    .info p {
+        
+        width: 100%;
+      }
+  
+    .info {
+      flex-direction: column;
+      padding: 10px;
+      text-align: justify;
+    }
+    .info br{
+        display: none;
+    }
+   
+    .auto-call {
+      width: 100%;
+      justify-content: center;
+    }
+   
+    .contact-list1 {
+      padding: 20px;
+    }
+  
+    .contact-list1 ul {
+      padding: 0;
+    }
+  
+    .refresh {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .note {
+      font-size: 14px;
+    }
+    .sub253{
+        flex-direction: column;
+        padding: 0px 0px 10px 0px;
+    }
+  }
+  

@@ -1,0 +1,165 @@
+
+  
+  .recipient-container {
+    display: flex;
+    background-color: #E6F2FE; /* Light blue form background */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    margin:  0px auto;
+    justify-content: center;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-section img {
+    padding: 50px;
+    width: 412px;
+    height: 800px;
+    object-fit: cover;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header h1 {
+      color: #333;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .recipient-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .location-button {
+    margin-right: -1px;
+    width: 68%;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  .location-button:hover {
+    background-color: #444;
+  }
+  
+  .or-divider {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .submit-group {
+    text-align: center;
+  }
+  
+  .submit-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button i {
+    margin-left: 5px;
+  }
+  
+  .submit-button:hover {
+    background-color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .recipient-container {
+      flex-direction: column;
+    }
+  
+    .image-section {
+      height: 200px;
+    }
+  
+    .image-section img {
+      height: 100%;
+    }
+  
+    .form-section {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recipient-form {
+      gap: 10px;
+    }
+    .image-section img{
+        padding: 20px;
+    }
+  
+    .form-group select,
+    .location-button,
+    .submit-button {
+        text-align: center;
+      padding: 10px;
+      font-size: 0.8em;
+    }
+  
+    .form-header h1 {
+      font-size: 1.2em;
+    }
+    .submit-button{
+        width: 100%;
+        
+        justify-content: center;
+    }
+  }
+  
